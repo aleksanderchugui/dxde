@@ -18,6 +18,7 @@ public class Application{
      }
     public void printMerchantName(int id){
         Merchant m1 = merchantService.findById(id);
-        System.out.println("name = " + m1.getName());     
+        System.out.println("name = " + m1.getName());
+        System.out.println(1);
     } }
 
