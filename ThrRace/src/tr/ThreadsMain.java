@@ -7,7 +7,6 @@ public class ThreadsMain {
 
 		threadImplements.start();
 		threadExtends.start();
-		System.out.println("ThreadExtends ");
 	}
 }
 
