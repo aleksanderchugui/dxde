@@ -1,4 +1,6 @@
 package com.bionic.edu;
+import java.util.List;
+
 import javax.inject.Inject;
 import javax.inject.Named;
 
@@ -13,6 +15,9 @@ public class CustomerServiceImp implements 	CustomerService{
     @Transactional
     public void save(Customer customer){
     	customerDao.save(customer);
+    }
+    public List<String> getNames(double sumPayed){
+        return customerDao.getNames(sumPayed);
     }
 }
 

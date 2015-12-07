@@ -1,4 +1,6 @@
 package com.bionic.edu;
+import java.util.List;
+
 import javax.inject.Inject;
 import javax.inject.Named;
 
@@ -23,6 +25,12 @@ public class MerchantServiceImp implements 	MerchantService{
     @Transactional
     public void updateAccount(int id, String newAccount){
       	merchantDao.updateAccount(id, newAccount);
+    }
+    public List<Merchant> findAll(){
+    	return merchantDao.findAll();
+        }
+    public List<Result> getTotalReport(){
+    	return merchantDao.getTotalReport();
     }
 }
 
